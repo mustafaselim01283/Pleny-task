@@ -1,0 +1,39 @@
+<nav>
+    <div class="nav-container">
+        <div class="logo">
+            <div class="logo-img">
+                <img src="../../assets/Content.png" alt="logo">
+            </div>
+            <div>
+                <h4>ClickTik</h4>
+            </div>
+
+        </div>
+
+        <!-- if user not login yet  -->
+        <div *ngIf="!userIsLoged" class="navigations">
+
+            <ul>
+                <li><a routerLink="">Home</a></li>
+                <li><a routerLink="login">Log in</a></li>
+            </ul>
+
+        </div>
+
+        <!-- if user login success -->
+        <div *ngIf="userIsLoged" class="navigations">
+
+            <ul>
+                <li><a routerLink="">Home</a></li>
+                <li>
+                    <input type="text" placeholder="Search" (input)="productNameSearch($event)">
+                    <a href=""> <i class="fa-solid fa-cart-shopping"></i>
+                    <span>{{productInCart}}</span>
+                    </a>                  
+                    <a href="">Account</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,31 @@
+@media screen and (max-width: 600px) {
+    
+    .footer-container{
+        padding: 2rem 4rem !important;
+    }
+}
+
+
+.footer-container{
+ background-color: #1D2939;
+ padding: 3rem 8rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h4{
+    margin-left: 10px;
+    color:white;
+}
+
+.footer-content{
+    color: #98A2B3;
+}
+
+
